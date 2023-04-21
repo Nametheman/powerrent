@@ -4,6 +4,7 @@ import styled from "styled-components";
 import Header from "Components/Header";
 import Accordion from "Components/Accordion";
 import Products from "Components/Products";
+import Footer from "Components/Footer";
 function App() {
   return (
     <Wrapper>
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <Products />
       <Accordion />
+      <Footer />
     </Wrapper>
   );
 }
@@ -18,5 +20,5 @@ function App() {
 export default App;
 
 const Wrapper = styled.main`
-  padding: 0 0 90px;
+  /* padding: 0 0 90px; */
 `;
