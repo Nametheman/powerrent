@@ -21,7 +21,7 @@ const Header = () => {
     {
       icon: <CiChat2 />,
       title: "Reach out to us",
-      text: "Use the chat button to call us or chat us on WhatsApp to discuss how to best serve you.",
+      text: "Use the chat button to talk to us or chat us on WhatsApp to discuss how to best serve you.",
     },
     {
       icon: <CiCircleCheck />,

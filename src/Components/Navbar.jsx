@@ -51,4 +51,5 @@ const LinksWrapper = styled.div`
   display: flex;
   gap: 30px;
   margin-left: 20%;
+  color: #5c5757;
 `;
