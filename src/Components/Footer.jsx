@@ -33,6 +33,7 @@ const Footer = () => {
           Designed by: <span>Oracle Solutions</span>
         </p>
       </div>
+      
     </Container>
   );
 };
@@ -65,6 +66,10 @@ const Container = styled.footer`
       text-align: center;
       color: #afafaf;
       margin-top: 10px;
+
+      @media only screen and (max-width: 450px) {
+        font-size: 13px;
+      }
     }
     .socials {
       display: flex;
@@ -96,6 +101,11 @@ const Container = styled.footer`
     color: #afafaf;
     font-size: 14px;
     gap: 40px;
+
+    @media only screen and (max-width: 450px) {
+      font-size: 11px;
+      gap: 20px;
+    }
 
     .designedBy {
       span {

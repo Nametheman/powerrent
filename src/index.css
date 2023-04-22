@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Coda&family=Hanalei&family=Mulish:wght@200;300;400;500;700&family=Squada+One&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Coda&family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&family=Hanalei&family=Mulish:wght@200;300;400;500;700&family=Squada+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -15,9 +17,61 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  scroll-behavior: smooth;
+}
+html {
+  scroll-behavior: smooth;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.phone {
+  position: fixed;
+  bottom: 12%;
+  right: 1.5%;
+  z-index: 100;
+  border: 2px solid #38b6ff;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.phone svg {
+  font-size: 25px;
+  color: #38b6ff;
+}
+
+.mobileCaretOpen {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  display: none;
+}
+.mobileCaretOpen svg {
+  font-size: 35px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 450px) {
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .phone {
+    right: 6%;
+    /* transform: translateX(); */
+  }
+  .mobileCaretOpen {
+    display: block;
+  }
 }

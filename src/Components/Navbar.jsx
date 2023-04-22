@@ -6,14 +6,15 @@ const Navbar = () => {
     <Container>
       <Logo>
         <h3 className="childName">
-          PowerRent<span>®</span>
+          Power<span className="rent">Rent</span>
+          <span className="rSign">®</span>
         </h3>
         <h3 className="parentName">SWATINI POWER</h3>
       </Logo>
       <LinksWrapper>
-        <a href="">Products</a>
-        <a href="">FAQs</a>
-        <a href="">Swatini Power</a>
+        <a href="#products">Products</a>
+        <a href="#faqs">FAQs</a>
+        <a href="https://www.swatinipower.com/">Swatini Power</a>
       </LinksWrapper>
     </Container>
   );
@@ -30,20 +31,38 @@ const Container = styled.nav`
 const Logo = styled.div`
   width: 20%;
   text-align: center;
+  @media only screen and (max-width: 450px) {
+    width: 30%;
+  }
   .parentName {
     font-size: 15px;
     font-family: "Squada One", cursive;
-    color: #38b6ff;
+    color: #000;
+
+    @media only screen and (max-width: 450px) {
+      font-size: 12px;
+    }
   }
   .childName {
     font-size: 25px;
-    font-family: "Squada One", cursive;
+    font-family: "Gothic A1", sans-serif;
+    font-weight: bold;
     position: relative;
-    span {
+
+    @media only screen and (max-width: 450px) {
+      font-size: 17px;
+    }
+    .rent {
+      color: tomato;
+    }
+    .rSign {
       font-family: "Mulish", sans-serif;
       font-size: 10px;
       position: absolute;
       top: 0.5rem;
+      @media only screen and (max-width: 450px) {
+        top: 0;
+      }
     }
   }
 `;
@@ -52,4 +71,8 @@ const LinksWrapper = styled.div`
   gap: 30px;
   margin-left: 20%;
   color: #5c5757;
+
+  @media only screen and (max-width: 450px) {
+    display: none;
+  }
 `;

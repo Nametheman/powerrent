@@ -25,21 +25,34 @@ const Card = styled.div`
   -moz-box-shadow: 0px 0px 32px 2px rgba(56, 182, 255, 0.07);
   position: relative;
 
+  @media only screen and (max-width: 450px) {
+    margin-bottom: 20px;
+  }
+
   .icon {
     svg {
       font-size: 40px;
       color: #38b6ff;
+      @media only screen and (max-width: 450px) {
+        font-size: 30px;
+      }
     }
   }
   .levelHead {
     margin: 20px 0;
     font-weight: bold;
     font-size: 20px;
+    @media only screen and (max-width: 450px) {
+      font-size: 17px;
+    }
   }
   .levelBody {
     font-size: 15px;
     font-weight: 500;
     color: #5c5757;
+    @media only screen and (max-width: 450px) {
+      font-size: 12px;
+    }
   }
   .line {
     bottom: -55px;

@@ -19,8 +19,8 @@ export default function SimpleAccordion() {
             // Some CSS
             background: "#38b6ff",
             color: "#fff",
-            width: "60%",
-            maxWidth: "60%",
+            // width: "60%",
+            // maxWidth: "60%",
             fontWeight: "bold",
           },
         },
@@ -120,6 +120,10 @@ const Wrapper = styled.div`
   background-color: #38b6ff10;
   position: relative;
 
+  @media only screen and (max-width: 450px) {
+    padding: 20px;
+  }
+
   .waves {
     position: absolute;
     width: 250px;
@@ -149,6 +153,10 @@ const Wrapper = styled.div`
       width: 60%;
       text-align: center;
       color: #5c5757;
+      @media only screen and (max-width: 450px) {
+        width: 90%;
+        font-size: 13px;
+      }
     }
   }
 `;
@@ -158,7 +166,21 @@ const AccordionWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   margin-top: 40px;
+  /* border: 1px solid; */
+  /* width: 60%; */
 
+  .css-i2m48r-MuiPaper-root-MuiAccordion-root {
+    width: 60% !important;
+    max-width: 60% !important;
+
+    @media only screen and (max-width: 450px) {
+      width: 90% !important;
+      max-width: 90% !important;
+    }
+  }
+  .css-i4bv87-MuiSvgIcon-root {
+    color: #f0f0f0;
+  }
   .accordion {
     background: red;
   }

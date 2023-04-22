@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import generator from "Assets/Images/generator1.jpeg";
+import generator from "Assets/Images/lighti-large.jpeg";
 import circle from "Assets/Illustrations/circle2.svg";
 import HeaderCard from "./HeaderCard";
 
@@ -64,6 +64,9 @@ export default Header;
 const Container = styled.div`
   margin-top: 100px;
   padding: 20px 70px;
+  @media only screen and (max-width: 450px) {
+    padding: 20px;
+  }
   position: relative;
   .circle {
     position: absolute;
@@ -80,7 +83,7 @@ const Container = styled.div`
     /* color: #5c5757; */
 
     span {
-      color: rgb(56, 182, 255);
+      color: tomato;
     }
   }
   .headerIntro {
@@ -90,6 +93,10 @@ const Container = styled.div`
     font-weight: 500;
     letter-spacing: 1.2px;
     color: #5c5757;
+
+    @media only screen and (max-width: 450px) {
+      font-size: 13px;
+    }
   }
 
   .headerBigImgWrapper {
@@ -100,6 +107,11 @@ const Container = styled.div`
       width: 80%;
       height: 650px;
       border-radius: 30px;
+
+      @media only screen and (max-width: 450px) {
+        width: 90%;
+        height: 300px;
+      }
     }
   }
 `;
@@ -108,4 +120,7 @@ const CardWrapper = styled.div`
   margin-top: 90px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  @media only screen and (max-width: 450px) {
+    grid-template-columns: 1fr;
+  }
 `;

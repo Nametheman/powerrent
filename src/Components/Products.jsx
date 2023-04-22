@@ -49,6 +49,10 @@ const ProductsWrapper = styled.div`
   display: flex;
   justify-content: center;
   gap: 100px;
+  @media only screen and (max-width: 450px) {
+    flex-direction: column;
+    align-items: center;
+  }
   .product {
     background: #fff;
     box-shadow: 0px 0px 32px 2px rgba(56, 182, 255, 0.07);
@@ -58,10 +62,17 @@ const ProductsWrapper = styled.div`
     padding: 10px 10px 40px;
     border-radius: 30px;
 
+    @media only screen and (max-width: 450px) {
+      width: 380px;
+    }
+
     img {
-      width: 400px;
+      width: 380px;
       height: 300px;
       border-radius: 30px;
+      @media only screen and (max-width: 450px) {
+        width: 100%;
+      }
     }
     .productDesc {
       margin: 30px 10px;
