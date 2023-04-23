@@ -10,22 +10,22 @@ const Header = () => {
   const stepList = [
     {
       icon: <CiDesktop />,
-      title: "Visit the website",
+      title: "Visit Our Website",
       text: "You are at the right place. We are ready to offer you energy for your next big event.",
     },
     {
       icon: <CiSearch />,
-      title: "Seearch from our list",
+      title: "Search From Our List",
       text: "Go through our list of generators and power sources for what fit your need best.",
     },
     {
       icon: <CiChat2 />,
-      title: "Reach out to us",
+      title: "Reach Out To Us",
       text: "Use the chat button to talk to us or chat us on WhatsApp to discuss how to best serve you.",
     },
     {
       icon: <CiCircleCheck />,
-      title: "Receive your Item",
+      title: "Receive Your Item",
       text: "We will take care of delivering the generator to your desired location. Enjoy uninterrupted power source with the best hands",
     },
   ];
